@@ -10,7 +10,7 @@ int main(void)
 	char chars[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
 	fp = fopen("file.txt", "w");
-	fwrite(chars, 1, "and that piece of art is useful\" - Dora Korpar, 2015-10-19", fp);
+	fwrite(chars, 1, sizeof(chars), fp);
 
 	fclose(fp);
 
