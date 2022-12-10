@@ -5,7 +5,6 @@
  * Return: Always 1 (Success)
  */
 int main(void)
-char main (void)
 {
 	FILE *fp;
 	char chars[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
