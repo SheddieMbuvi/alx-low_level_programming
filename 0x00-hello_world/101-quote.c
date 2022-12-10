@@ -6,7 +6,11 @@
  */
 int main(void)
 {
-	char *s = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	
-	while (*s) putchar(*s++);
+	FILE *fp;
+	char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+
+	fp = fopen("101-quote.c", "w");
+	fwrite(str, 1, sizeof(str), fp);
+
+	return (1);
 }
