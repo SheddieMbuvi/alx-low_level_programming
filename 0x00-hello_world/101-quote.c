@@ -6,13 +6,6 @@
  */
 int main(void)
 {
-	FILE *fp;
-	char chars[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
-
-	fp = fopen("file.txt", "w");
-	fwrite(chars, 1, sizeof(chars), fp);
-
-	fclose(fp);
-
+	write(STDOUT_FILENO, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
 	return (1);
 }
