@@ -7,10 +7,10 @@
 int main(void)
 {
 	FILE *fp;
-	char str[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	char chars[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
 	fp = fopen("file.txt", "w");
-	fwrite(str, 1, sizeof(str), fp);
+	fwrite(chars, 1, sizeof(chars), fp);
 
 	fclose(fp);
 
