@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-/*More headers
- *
+/* More headers
  * More betty style doc for function main
  */
 int main(void)
@@ -10,6 +9,8 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
+	printf("Enter any number");
+	scanf("%d", &n);
 	if (n > 0)
 	{
 	printf("is positive\n");
