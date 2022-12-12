@@ -10,8 +10,7 @@ int main(void)
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		ch = tolower(ch);
-		putchar(ch);
+		printf("%c.", ch);
 	}
 
 	return (0);
