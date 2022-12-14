@@ -3,8 +3,8 @@
  * main - Start here
  *
  * Return: Always return 0 (Success)
- */
-void print_alphabet(void)
+*/
+int main(void)
 {
 	char ch;
 
