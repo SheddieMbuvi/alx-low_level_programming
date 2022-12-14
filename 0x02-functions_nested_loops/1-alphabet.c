@@ -3,9 +3,9 @@
 /**
  * main - Start here
  *
- * Return: Always return 0 (Success)
-*/
-void print_alphabet(void)
+ * Return: Always return 0 (success)
+ */
+int main(void)
 {
 	char ch = 'a';
 
