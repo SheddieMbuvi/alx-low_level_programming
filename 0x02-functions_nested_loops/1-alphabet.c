@@ -5,7 +5,7 @@
  *
  * Return: Always return 0 (success)
  */
-int main(void)
+void print_alphabet(void)
 {
 	char ch = 'a';
 
@@ -15,6 +15,4 @@ int main(void)
 		ch++;
 	}
 	_putchar('\n');
-
-	return (0);
 }
