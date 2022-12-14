@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - Start here
- * print_alphabet - Function name
+ * print_alphabet - Entry point
  *
  * Return: Always return 0 (success)
  */
