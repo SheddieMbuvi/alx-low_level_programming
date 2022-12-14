@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Retun: Always return 0 (success)
+ * Return: Always return 0 (success)
  */
 int main(void)
 {
