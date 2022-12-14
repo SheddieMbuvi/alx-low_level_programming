@@ -2,6 +2,7 @@
 #include "main.h"
 /**
  * main - Start here
+ * print_alphabet - Function name
  *
  * Return: Always return 0 (success)
  */
