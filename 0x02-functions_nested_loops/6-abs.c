@@ -3,7 +3,7 @@
 /**
  * _abs - Function to compute absoulute value of intenger
  *
- * @c: complie the programm
+ * @i: complie the programm
  * Return: 0 success
  */
 int _abs(int i)
