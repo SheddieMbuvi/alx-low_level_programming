@@ -6,9 +6,14 @@
  * @c: complie the programm
  * Return: 0 success
  */
-int _abs(int)
+int _abs(int i)
 {
-	int i;
-
-	i = abs(int);
+	if (i <= 0)
+	{
+		return (i * -1);
+	}
+	else
+	{
+		return (i);
+	}
 }
