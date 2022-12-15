@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * add - check the code
- *@sum: the total
+ *sum: the total
  *@a: integer value
  *@b: integer value
  * Return:  Always return 0
