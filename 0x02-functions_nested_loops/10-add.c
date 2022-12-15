@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - check the code
- *@sum: the total value of the numbers
+ * add - check the code
+ *@sum: the total
+ *@a: integer value
+ *@b: integer value
  * Return:  Always return 0
  */
 int add(int a, int b)
