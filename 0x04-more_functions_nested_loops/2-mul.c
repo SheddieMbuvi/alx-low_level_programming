@@ -4,7 +4,7 @@
  * mul - Function to find the thr product
  * @a: first character
  * @b: second character
- * @c: the product
+ * c: the product
  * Return: 1 sucess
  */
 int mul(int a, int b)
