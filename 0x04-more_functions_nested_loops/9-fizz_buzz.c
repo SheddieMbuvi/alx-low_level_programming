@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int i =1;
+	int i = 1;
 
 	for (; i < 100; i++)
 	{
@@ -19,7 +19,7 @@ int main(void)
 		else
 			printf("%d ", i);
 	}
-	printf("Buzzz\n");
+	printf("Buzz\n");
 
 	return (0);
 }
