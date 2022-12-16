@@ -6,7 +6,8 @@
  * i: number of loops
  * j: what to execute in every loop
  * Return: 0 success
- */void print_triangle(int size)
+ */
+void print_triangle(int size)
 {
 	int i = 0; j, n = size - 1;
 
