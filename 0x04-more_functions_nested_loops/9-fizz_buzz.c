@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * main - Fizz buzz things
- * @i: the numbers
+ * i: the numbers
  * Return: Always 0 success
  */
 int main(void)
