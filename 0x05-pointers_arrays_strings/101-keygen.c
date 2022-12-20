@@ -18,7 +18,7 @@ int i = 0;
     srand((unsigned int)(time(NULL)));
   
     /* Array of numbers */
-    char numbers[] = "0123456789";
+    int numbers[] = "0123456789";
   
     char letter[] = "abcdefghijklmnoqprstuvwyzx";
   
