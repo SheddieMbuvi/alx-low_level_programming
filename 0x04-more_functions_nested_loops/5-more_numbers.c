@@ -4,26 +4,27 @@
  * more_numbers - function to print more numbers
  * i: integer to print
  * j: number of times to print
- * Return: 1 success else 0 
+ * Return: 1 success else 0
  */
 void more_numbers(void)
 {
-	int j = 0;
+	int i, j;
 
-	while (j < 11)
+	i = 0;
+
+	while (i < 10)
 	{
-		int i =  0;
-		
-		for (i < 15)
+		for (j = 0; j < 15; j++)
 		{
-			if (i >= 9)
+			if (j >= 10)
 			{
-				_putchar((i / 10) + '0');
+				_putchar((j / 10) + 48);
 			}
-			_putchar((i % 10) + '0');
-			i++;
+			_putchar((j % 10) + 48);
 		}
-		j++;
-		_putchar('\n');	
-	}
+
+		_putchar('\n');
+
+		i++;
+}
 }
