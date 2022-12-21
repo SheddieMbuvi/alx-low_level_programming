@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "mine.h"
+#include "main.h"
 /**
  * print_square - funtion printing a square
  * @b: input integer
