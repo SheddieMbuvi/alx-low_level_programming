@@ -10,4 +10,6 @@ int check_seperators(char c);
 void reverse_array(int *a, int n);
 char *string_toupper(char *);
 char *cap_string(char *);
+int base10(int n);
+void print_number(int n);
 #endif /*MAIN_H */
