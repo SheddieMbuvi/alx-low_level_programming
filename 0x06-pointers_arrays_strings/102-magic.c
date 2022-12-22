@@ -1,4 +1,12 @@
 #include <stdio.h>
+#include "main.h"
+/**
+ * main - Performing magic
+ * n: integer
+ * a: array
+ * p: pointer
+ * Return: magic.
+ */
 
 int main(void)
 {
