@@ -13,5 +13,7 @@ int wildcmp(char *s1, char *s2);
 int is_palindrome(char *s);
 int _root(int p, int r);
 int is_divisible(int num, int div);
+int _strlen_recursion(char *s);
+int is_palindrome(char *s);
 
 #endif /*MAIN_H*/
