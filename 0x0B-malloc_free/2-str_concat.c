@@ -2,50 +2,60 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * *str_concat - function to concanate two strings
- * @s1: string one
- * @s2: string two
- * Return: two strings together
+ *_strlen - count arrray
+ *@s: array of elements
+ *Return: i
+ */
+int _strlen(char *s)
+{
+	unsigned int i;
+
+	i = 0;
+	while (s[i] != '\0') /*Count character of string*/
+	{
+		i++;
+	}
+
+	return (i);
+}
+/**
+ *str_concat - back a pointer to array
+ *@s1: Array one
+ *@s2: Array two
+ *Return: Always an array dinamic
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *new, *str1, *str2;
-	int len1 = 0, len2 = 0, i = 0;
+	char *dst;
+	unsigned int i, j, size;
 
-	str1 = s1;
-	str2 = s2;
+	/*If the array is empty*/
 	if (s1 == NULL)
-	{
-		len1++;
-		s1++;
-	}
-	s1 = str1;
+		s1 = "";
+
 	if (s2 == NULL)
 		s2 = "";
-	while (*s2)
-	{
-		len2++;
-		s2++;
-	}
-	s2 = str2;
 
-	new = malloc(sizeof(char) * (len1 + len2 + 1));
-	str1 = new;
-	if (new == NULL)
-		return (NULL);
-	for (; i < (len1 + len2); i++)
+	/*count size total*/
+	size = (_strlen(s1) + _strlen(s2) + 1);
+
+	/*malloc*/
+	dst = (char *) malloc(size * sizeof(char));
+
+	if (dst == 0)
 	{
-		if (i < len1)
-		{
-			new[i] = *s1;
-			s1++;
-		}
-		else
-		{
-			new[i] = *s2;
-			s2++;
-		}
+		return (NULL);
 	}
-	new[i] = '\0';
-	return (new);
+
+	/*Concatenate arrays*/
+	for (i = 0; *(s1 + i) != '\0'; i++)
+		*(dst + i) = *(s1 + i);
+
+	for (j = 0; *(s2 + j) != '\0'; j++)
+	{
+		*(dst + i) = *(s2 + j);
+		i++;
+	}
+
+	return (dst);
 }
