@@ -10,7 +10,7 @@
  */
 int main(int argc, char **argv)
 {
-	int result = 0, num1, num2, i;
+	int result = 0,i;
 
 	while (argc-- > 1)
 	{
@@ -21,11 +21,9 @@ int main(int argc, char **argv)
 				printf("Error\n");
 				return (1);
 			}
-		num1 = atoi(argv[argc]);
-		num2 = atoi(argv[argc]);
-		result = num1 + num2;
 		}
-		
+		result += atoi(argv[argc]);
+						
 	}
 	printf("%d\n", result);
 	return (0);
