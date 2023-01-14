@@ -10,7 +10,7 @@
  */
 int main(int argc, char **argv)
 {
-	int result = 0,i;
+	int result = 0, i;
 
 	while (argc-- > 1)
 	{
@@ -23,7 +23,6 @@ int main(int argc, char **argv)
 			}
 		}
 		result += atoi(argv[argc]);
-						
 	}
 	printf("%d\n", result);
 	return (0);
