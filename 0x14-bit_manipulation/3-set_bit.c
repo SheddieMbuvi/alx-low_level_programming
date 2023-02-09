@@ -8,21 +8,10 @@
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
-	char *arr;
-	unsigned int i, num;
-
-	arr = malloc((index + 2) * sizeof(*arr));
-	if (arr == NULL)
+	if (index >= (sizeof(unsigned long int) * 8))
 		return (-1);
 
-	arr[0] = '1';
-	for (i = 1; i < index + 1; i++)
-		arr[i] = '0';
-	arr[index + 1] = 0;
-
-	num = binary_to_uint(arr);
-	free(arr);
-	*n |= num;
+	*n ^= (1 << index);
 
 	return (1);
 }
