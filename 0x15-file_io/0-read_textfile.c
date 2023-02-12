@@ -12,29 +12,41 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t file, let, w;
-	char *text;
-
-	text = malloc(letters);
-	if (text == NULL)
-		return (0);
+	ssize_t wrt, rd;
+	char *buf;
+	int opn;
 
 	if (filename == NULL)
 		return (0);
 
-	file = open(filename, O_RDONLY);
+	opn = open(filename, O_RDONLY);
+	if (opn < 0)
+		return (0);
 
-	if (file == -1)
+	buf = malloc(letters * sizeof(*buf));
+	if (buf == NULL)
 	{
-		free(text);
+		close(opn);
 		return (0);
 	}
 
-	let = read(file, text, letters);
+	rd = read(opn, buf, letters);
+	if (rd < 0)
+	{
+		close(opn);
+		free(buf);
+		return (0);
+	}
 
-	w = write(STDOUT_FILENO, text, let);
+	wrt = write(STDOUT_FILENO, buf, (size_t)rd);
+	if (wrt < rd)
+	{
+		close(opn);
+		free(buf);
+		return (0);
+	}
 
-	close(file);
-
-	return (w);
+	close(opn);
+	free(buf);
+	return (wrt);
 }
